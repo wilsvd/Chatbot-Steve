@@ -9,6 +9,12 @@ SB_STEMMER = SnowballStemmer('english')  # using snowball stemmer
 LEMMATISER = WordNetLemmatizer()
 STOP_WORDS = stopwords.words('english')
 
+# nltk.download('stopwords')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('universal_tagset')
+# nltk.download('wordnet')
+# nltk.download('omw-1.4')
+
 
 def token_stemming(tokens):
     new_tokens = []

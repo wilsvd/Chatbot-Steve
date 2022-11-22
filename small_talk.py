@@ -1,15 +1,14 @@
 import pandas as pd
 import numpy as np
-import sklearn
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import pairwise_distances
+
+from match_intent import calculate_similarity
 from process_text import create_sentence
-THRESHOLD = 0.4
+SM_THRESHOLD = 0.5
 
-def make_small_talk(sm_data, similarity):
-    cos = similarity
+def make_small_talk(sm_data, query):
+    cos = calculate_similarity(sm_data, query)
 
-    if cos.max() >= THRESHOLD:
+    if cos.max() >= SM_THRESHOLD:
         id_argmax = np.where(cos == np.max(cos, axis=0))
         id = np.random.choice(id_argmax[0])
         result = sm_data['answer'].loc[id]
@@ -17,7 +16,7 @@ def make_small_talk(sm_data, similarity):
     else:
         return 'NOT FOUND'
 
-
 def replicate_answer(query):
     new_sentence = create_sentence(query)
     return new_sentence
+

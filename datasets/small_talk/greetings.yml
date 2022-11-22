@@ -1,81 +1,81 @@
 categories:
-  - greetings
+    - greetings
 conversations:
-  - - Hello
-    - Hi
-  - - Hi
-    - Hello
-  - - Greetings!
-    - Hello
-  - - Hello
-    - Greetings!
-  - - hi! how is it going?
-    - good. How about you?
-  - - hi! How is it going?
-    - fine. how about you?
-  - - hi! How is it going?
-    - okay. how about you?
-  - - hi! How is it going?
-    - great. how about you?
-  - - Hi, How is it going?
-    - Could be better.
-  - - Hi, How is it going?
-    - Not so great.
-  - - How are you doing?
-    - Good. How about you?
-  - - How are you doing?
-    - Very well, thanks. How about you?
-  - - How are you doing?
-    - Fine, and you?
-  - - Nice to meet you.
-    - Thank you.
-  - - How do you do?
-    - I'm doing well. How about you?
-  - - How do you do?
-    - I'm doing well. How are you?
-  - - Hi, nice to meet you.
-    - Thank you. You too.
-  - - It is a pleasure to meet you.
-    - Thank you. You too.
-  - - Top of the morning to you!
-    - Thank you kindly.
-  - - Top of the morning to you!
-    - And the rest of the day to you.
-  - - What's up?
-    - Not much.
-  - - What's up?
-    - Not too much.
-  - - What's up?
-    - Not much, how about you?
-  - - What's up?
-    - Nothing much.
-  - - What's up?
-    - The sky's up but I'm fine thanks. What about you?
-    # Personal additions
-  - - How are you?
-      - I'm doing well.
-  - - I am fine. how about yourself?
-    - I am pretty good. Do you need any help.
-  - - I am pretty good. Thanks for asking.
-    - No problem.
-  - - No problem, so how have u been?
-    - I've been great. Do you need any help?
-  - - I've been great. What about you?
-    - I've been good. Do you need any help?
-  - - I am OK! Glad to know you are OK.
-    - Do you need any help?
-  - - I am fine.
-    - Glad to know ur fine. do u need any help?
-  - - I'm pretty good.
-    - Glad to know ur good. do u need any help?
-  - - I've been great. Glad to know ur great.
-    - Do u need any help?
-  - - I'm doing well. Glad to know ur well.
-    - Do u need any help?
-  - - I am glad to know that you are well.
-    - Do u need any help?
-  - - Fine. Glad to know you are fine.
-    - Do u need any help?
-  - - Glad to know you too. thank you.
-    - Do u need any help?
-    - Thank you.
+    - - Hello
+      - Hi
+    - - Hi
+      - Hello
+    - - Greetings!
+      - Hello
+    - - Hello
+      - Greetings!
+    - - hi! how is it going?
+      - good. How about you?
+    - - hi! How is it going?
+      - fine. how about you?
+    - - hi! How is it going?
+      - okay. how about you?
+    - - hi! How is it going?
+      - great. how about you?
+    - - Hi, How is it going?
+      - Could be better.
+    - - Hi, How is it going?
+      - Not so great.
+    - - How are you doing?
+      - Good. How about you?
+    - - How are you doing?
+      - Very well, thanks. How about you?
+    - - How are you doing?
+      - Fine, and you?
+    - - Nice to meet you.
+      - Thank you.
+    - - How do you do?
+      - I'm doing well. How about you?
+    - - How do you do?
+      - I'm doing well. How are you?
+    - - Hi, nice to meet you.
+      - Thank you. You too.
+    - - It is a pleasure to meet you.
+      - Thank you. You too.
+    - - Top of the morning to you!
+      - Thank you kindly.
+    - - Top of the morning to you!
+      - And the rest of the day to you.
+    - - What's up?
+      - Not much.
+    - - What's up?
+      - Not too much.
+    - - What's up?
+      - Not much, how about you?
+    - - What's up?
+      - Nothing much.
+    - - What's up?
+      - The sky's up but I'm fine thanks. What about you?
+      # Personal additions
+    - - How are you?
+        - I'm doing well.
+    - - I am fine. how about yourself?
+      - I am pretty good. Do you need any help.
+    - - I am pretty good. Thanks for asking.
+      - No problem.
+    - - No problem, so how have u been?
+      - I've been great. Do you need any help?
+    - - I've been great. What about you?
+      - I've been good. Do you need any help?
+    - - I am OK! Glad to know you are OK.
+      - Do you need any help?
+    - - I am fine.
+      - Glad to know ur fine. do u need any help?
+    - - I'm pretty good.
+      - Glad to know ur good. do u need any help?
+    - - I've been great. Glad to know ur great.
+      - Do u need any help?
+    - - I'm doing well. Glad to know ur well.
+      - Do u need any help?
+    - - I am glad to know that you are well.
+      - Do u need any help?
+    - - Fine. Glad to know you are fine.
+      - Do u need any help?
+    - - Glad to know you too. thank you.
+      - Do u need any help?
+      - Thank you.

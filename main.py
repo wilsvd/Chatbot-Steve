@@ -1,17 +1,14 @@
-# %%
 from question_answer import answer_question
 from small_talk import make_small_talk, replicate_answer
-from match_intent import check_intent
+from name import get_name_similarity
 from identity_management import set_username, is_name_change
 from joblib import load
+from pprint import pprint
+from process_text import preprocess_text
 
-# %%
-qa_data = load("qa_dataset.joblib")
-sm_data = load("sm_dataset.joblib")
-name_data = load("name_dataset.joblib")
-
-# %%
-name_data
+qa_data = load("./joblibs/qa_dataset.joblib")
+sm_data = load("./joblibs/sm_dataset.joblib")
+name_data = load("./joblibs/name_dataset.joblib")
 
 #   (5 total features to pick from: 50% rule dictates that 3 features must be picked)
 #
@@ -19,10 +16,9 @@ name_data
 #   Intent Matching: Use intent matching to distinguish whether something is a question or small talk
 #   Question Answering: Check similarity of input to the dataset for q&a and then return the answer of that question.
 #   Small talk: Check similarity of input to the dataset for small talk and then return the response for that input.
-#
-# %%
+
 NAME = "NAME"
-SMALLTALK = "SMALLTALK"
+SMALLTALK = "SMALL TALK"
 QUESTION = "QUESTION"
 
 user_name = "User"
@@ -33,43 +29,40 @@ user_name = set_username(user_input)
 print(user_name)
 print(
     f"Steve: Let me know at any time if you want to change your username {user_name} :)")
-print("Steve: You can either chat with me or ask questions about the world.")
+print("Steve: You can either chat with me or ask questions about:\n -- University, Youtube, Humanism, Geological History of Earth, Police, Infection, Hunting --\n")
 
 query = "TEMP STRING"
 while (query):
-    query = input(user_name + ": ").lower()
-    intent_res = check_intent(name_data, sm_data, qa_data, query)
+    q_input = input(user_name + ": ").lower()
+    query = preprocess_text(q_input, "lemmatisation")
+    
+    if (query == "yes" or query == "no"):
+        print(f"Steve: please elaborate")
+        continue
 
-    intent = intent_res[0]
-    similarity = intent_res[1]
-
+    intent = get_name_similarity(name_data, query)
     if intent == NAME:
         if (is_name_change(query)):
             print(f"Steve: {user_name}, please enter a new name")
             user_input = input(user_name + ": ").lower()
             user_name = set_username(user_input)
             print(f"Steve: Congratulations your name is now {user_name}")
+            continue
         else:
             print(f"Steve: Your name is {user_name}")
-    elif intent == SMALLTALK:
-        response = make_small_talk(sm_data, similarity)
-        if (response == "NOT FOUND"):
-            new_response = replicate_answer(query)
-            print("Steve: " + new_response)
-        else:
-            print("Steve: " + response)
+            continue
+    
+    response = make_small_talk(sm_data, query)
+    if (response != "NOT FOUND"):
+        print("Steve: " + response)
+        continue
 
-    elif intent == QUESTION:
-        response = answer_question(qa_data, similarity)
+    response = answer_question(qa_data, query)
+    if (response != "NOT FOUND"):
+        print(f"Here is the answer to your question: {response}")
+        continue
 
-        if (response == "NOT FOUND"):
-            print(
-                "I'm sorry, I couldn't find what you are looking for. Can you try rephrasing the question?")
-        else:
-            print(f"Here is the answer to your question: {response}")
-
-    else:
-        print("I'm sorry, I didn't understand what you were saying.")
+    print("I'm sorry, I don't understand what you are saying.")
 
 
 print("Steve: I enjoyed talking to you :)")

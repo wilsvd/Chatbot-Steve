@@ -8,7 +8,7 @@ from joblib import dump
 from process_text import preprocess_text
 
 QA_FILE = "./datasets/stanford/train-v1.1.json"
-SM_FOLDER = "./datasets/small_talk"
+SM_FOLDER = "./datasets/small_talk/"
 NAME_FILE = "./datasets/name/name.yml"
 
 
@@ -29,10 +29,8 @@ def setup_qa_dataset():
         'id'), bot_nest.set_index('q_idx')], axis=1, sort=False).reset_index()
     qa_dataset = qa_dataset.drop(columns=['answer_start', 'index'])
 
-    qa_dataset['question'] = qa_dataset['question'].apply(
-        preprocess_text, type='lemmatisation')
-
-    dump(qa_dataset, "qa_dataset.joblib")
+    qa_dataset['question'] = qa_dataset['question'].apply(preprocess_text, type='lemmatisation')
+    dump(qa_dataset, "./joblibs/qa_dataset.joblib")
 
 
 def setup_small_talk_dataset():
@@ -52,9 +50,8 @@ def setup_small_talk_dataset():
                 elif len(con) > 1:
                     sm_dataset.loc[len(sm_dataset.index)] = [con[0], con[1]]
 
-    # sm_dataset['question'] = sm_dataset['question'].apply(
-    #     preprocess_text, type='lemmatisation')
-    dump(sm_dataset, "sm_dataset.joblib")
+    sm_dataset['question'] = sm_dataset['question'].apply(preprocess_text, type='lemmatisation')
+    dump(sm_dataset, "./joblibs/sm_dataset.joblib")
 
 
 def setup_name_dataset():
@@ -63,9 +60,11 @@ def setup_name_dataset():
     questions = docs['question']
     for question in questions:
         name_dataset.loc[len(name_dataset.index)] = [question[0]]
-    dump(name_dataset, "name_dataset.joblib")
+
+    name_dataset['question'] = name_dataset['question'].apply(preprocess_text, type='lemmatisation')
+    dump(name_dataset, "./joblibs/name_dataset.joblib")
 
 
-# setup_qa_dataset()
+setup_qa_dataset()
 setup_small_talk_dataset()
 setup_name_dataset()

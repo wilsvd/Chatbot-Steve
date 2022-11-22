@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "chatbot"
+version = "0.1.0"
+description = ""
+authors = ["Wil"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nltk = "3.7"
+numpy = "^1.23.5"
+pandas = "^1.5.1"
+scikit-learn = "^1.1.3"
+pyyaml = "^6.0"
+ipykernel = "^6.17.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
