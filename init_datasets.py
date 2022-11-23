@@ -10,6 +10,7 @@ from process_text import preprocess_text
 QA_FILE = "./datasets/stanford/train-v1.1.json"
 SM_FOLDER = "./datasets/small_talk/"
 NAME_FILE = "./datasets/name/name.yml"
+INTENT_FILE = "./datasets/small_talk/Small_talk_Intent.csv"
 
 
 def setup_qa_dataset():
@@ -20,16 +21,16 @@ def setup_qa_dataset():
     mid_nest = pd.json_normalize(file, record_path[:-1])
     top_nest = pd.json_normalize(file, record_path[:-2])
     # Merge dataframes
-    idx = np.repeat(top_nest['context'].values, top_nest.qas.str.len())
+    # idx = np.repeat(top_nest['context'].values, top_nest.qas.str.len())
     ndx = np.repeat(mid_nest['id'].values, mid_nest['answers'].str.len())
-    mid_nest['context'] = idx
+    # mid_nest['context'] = idx
     bot_nest['q_idx'] = ndx
     # %%
-    qa_dataset = pd.concat([mid_nest[['id', 'question', 'context']].set_index(
+    qa_dataset = pd.concat([mid_nest[['id', 'question']].set_index(
         'id'), bot_nest.set_index('q_idx')], axis=1, sort=False).reset_index()
     qa_dataset = qa_dataset.drop(columns=['answer_start', 'index'])
 
-    qa_dataset['question'] = qa_dataset['question'].apply(preprocess_text, type='lemmatisation')
+    # qa_dataset['question'] = qa_dataset['question'].apply(preprocess_text, type='lemmatisation')
     dump(qa_dataset, "./joblibs/qa_dataset.joblib")
 
 
@@ -50,8 +51,12 @@ def setup_small_talk_dataset():
                 elif len(con) > 1:
                     sm_dataset.loc[len(sm_dataset.index)] = [con[0], con[1]]
 
-    sm_dataset['question'] = sm_dataset['question'].apply(preprocess_text, type='lemmatisation')
+    # sm_dataset['question'] = sm_dataset['question'].apply(preprocess_text, type='lemmatisation')
     dump(sm_dataset, "./joblibs/sm_dataset.joblib")
+
+def setup_intent_sm_dataset():
+    intent_dataset = pd.read_csv(INTENT_FILE)
+    dump(intent_dataset, "./joblibs/intent_dataset.joblib")
 
 
 def setup_name_dataset():
@@ -61,10 +66,11 @@ def setup_name_dataset():
     for question in questions:
         name_dataset.loc[len(name_dataset.index)] = [question[0]]
 
-    name_dataset['question'] = name_dataset['question'].apply(preprocess_text, type='lemmatisation')
+    # name_dataset['question'] = name_dataset['question'].apply(preprocess_text, type='lemmatisation')
     dump(name_dataset, "./joblibs/name_dataset.joblib")
 
 
-setup_qa_dataset()
-setup_small_talk_dataset()
-setup_name_dataset()
+# setup_qa_dataset()
+# setup_small_talk_dataset()
+setup_intent_sm_dataset()
+# setup_name_dataset()
