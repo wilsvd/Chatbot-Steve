@@ -70,7 +70,7 @@ def setup_name_dataset():
     dump(name_dataset, "./joblibs/name_dataset.joblib")
 
 
-# setup_qa_dataset()
+setup_qa_dataset()
 # setup_small_talk_dataset()
+setup_name_dataset()
 setup_intent_sm_dataset()
-# setup_name_dataset()

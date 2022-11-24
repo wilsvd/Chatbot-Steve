@@ -4,8 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import pairwise_distances
 from match_intent import calculate_similarity
 from process_text import create_sentence
-from joblib import load
-from pprint import pprint
+import json
 
 SM_THRESHOLD = 0.5
 
@@ -40,8 +39,7 @@ def get_intent(intent_data, query):
         return 'NOT FOUND'
 
 def find_response(intent_data, query):
-    
-    result = get_intent(intent_data, "How are you?")
+    result = get_intent(intent_data, query)
 
     if result == 'NOT FOUND':
         return 'NOT FOUND'
@@ -51,12 +49,7 @@ def find_response(intent_data, query):
         options = response_data[result]
         id = np.random.choice(len(options))
         return options[id]
-    
-import json
-intent_data = load("./joblibs/intent_dataset.joblib")
-query = input("User: ")
-response = find_response(intent_data, query)
-print(response)
+
 
 # After getting intent, I know that it exsits (That is why I was able to get it dumb dumb)
 # Now that I have the intent. I need to use it to generate text.

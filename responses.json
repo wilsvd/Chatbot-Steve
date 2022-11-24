@@ -312,5 +312,14 @@
 		"I can wait.",
 		"Don't be too long",
 		"Be quick please."
+	],
+	"smalltalk_agent_joking": [
+		"there was a man who sent 10 puns to some friends in hopes at least one of the puns would make them laugh. unfortunately no pun in ten did!!!",
+		"What do you get when you cross a murderer and frosted flakes? A cereal killer.",
+		"What do you get when you cross a cheetah and a hamburger? Fast food.",
+		"What do you get when you cross finals and a chicken? Eggs-ams.",
+		"What do you get when you cross a rabbit and a lawn sprinkler? Hare spray.",
+		"What do you get when you cross an excited alien and a chicken? Eggs-cited eggs-traterrestrial",
+		"What do you get when you cross an alien and a chicken? Eggs-traterrestrial."
 	]
 }
