@@ -1,60 +1,61 @@
 question:
-    - - Do you remember my name
-    - - Do you know my name
-    - - Who am I?
-    - - Tell me who I am
-    - - Tell me my name
-    - - Did you forget my name?
-    - - Call my name
-    - - Yell my name
-    - - Scream my name
-    - - Shout my name
-    - - Replace my name
-    - - Change my name
-    - - Swap my name
-    - - Substitute my name
-    - - Switch my name
-    - - Rename me
-    - - Call me a new name
-    - - Call me a different name
-    - - I want to replace my name
-    - - I want to change my name
-    - - I want to swap my name
-    - - I want to substitute my name
-    - - I want to switch my name
-    - - I want you to rename me
-    - - I want you to call me a new name
-    - - I want you to call me a different name
-    - - Can you replace my name
-    - - Can you change my name
-    - - Can you swap my name
-    - - Can you substitute my name
-    - - Can you switch my name
-    - - Can you to rename me
-    - - Can you call me a new name
-    - - Can you call me a different name
-    - - Please replace my name
-    - - Please change my name
-    - - Please swap my name
-    - - Please substitute my name
-    - - Please switch my name
+    - - name
+    - - remember my name
+    - - know my name
+    - - who am i
+    - - who i am
+    - - my name
+    - - did you forget my name
+    - - call my name
+    - - yell my name
+    - - scream my name
+    - - shout my name
+    - - replace my name
+    - - change my name
+    - - swap my name
+    - - substitute my name
+    - - switch my name
+    - - rename me
+    - - call me a new name
+    - - call me a different name
+    - - i want to replace my name
+    - - i want to change my name
+    - - i want to swap my name
+    - - i want to substitute my name
+    - - i want to switch my name
+    - - i want you to rename me
+    - - i want you to call me a new name
+    - - i want you to call me a different name
+    - - can you replace my name
+    - - can you change my name
+    - - can you swap my name
+    - - can you substitute my name
+    - - can you switch my name
+    - - can you to rename me
+    - - can you call me a new name
+    - - can you call me a different name
+    - - please replace my name
+    - - please change my name
+    - - please swap my name
+    - - please substitute my name
+    - - please switch my name
     - - Please rename me
     - - Please call me a new name
     - - Please call me a different name
-    - - I would like to replace my name
-    - - I would like to change my name
-    - - I would like to swap my name
-    - - I would like to substitute my name
-    - - I would like to switch my name
-    - - I would like you to rename me
-    - - I would like you to call me a new name
-    - - I would like you to call me a different name
-    - - Can I replace my name
-    - - Can I change my name
-    - - Can I swap my name
-    - - Can I substitute my name
-    - - Can I switch my name
-    - - Can I rename me
-    - - Can I call me a new name
-    - - Can I call me a different name
+    - - i would like to replace my name
+    - - i would like to change my name
+    - - i would like to swap my name
+    - - i would like to substitute my name
+    - - i would like to switch my name
+    - - i would like you to rename me
+    - - i would like you to call me a new name
+    - - i would like you to call me a different name
+    - - can i replace my name
+    - - can i change my name
+    - - can i swap my name
+    - - can i substitute my name
+    - - can i switch my name
+    - - can i rename me
+    - - can i call me a new name
+    - - can i call me a different name
     - - What is my name?

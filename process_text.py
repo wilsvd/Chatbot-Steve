@@ -8,7 +8,6 @@ from nltk.stem.wordnet import WordNetLemmatizer
 SB_STEMMER = SnowballStemmer('english')  # using snowball stemmer
 LEMMATISER = WordNetLemmatizer()
 STOP_WORDS = stopwords.words('english')
-
 # nltk.download('stopwords')
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('universal_tagset')
@@ -60,11 +59,30 @@ def tokenise_text(text, type):
 
     return tokens
 
+def lemmatise_or_stem(text, type):
+    # tokenise
+    text_tokens = word_tokenize(text)
+    # remove stop words and special signs
+    tokens = []
+    for word in text_tokens:
+        if word.isalpha():
+            tokens.append(word)
 
-def preprocess_text(text, type):
+    if type == 'lemmatisation':
+        tokens = token_lemmatisation(tokens)
+    else:
+        tokens == token_stemming(tokens)
 
+    return tokens
+
+
+def preprocess_text(text = "", stopwords = False, type = "lemmatisation"):
     text = str(text).lower()
-    res_tokens = tokenise_text(text, type)
+    res_tokens = []
+    if stopwords:
+        res_tokens = tokenise_text(text, type)
+    else:
+        res_tokens = lemmatise_or_stem(text, type)
     return (' ').join(res_tokens)
 
 

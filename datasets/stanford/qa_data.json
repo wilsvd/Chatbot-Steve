@@ -8,6 +8,16 @@
 					"qas": [
 						{
 							"answers": [
+								{
+									"answer_start": 0,
+									"text": "The original Latin word \"universitas\" refers in general to \"a number of persons associated into one body, a society, company, community, guild, corporation, etc.\" At the time of the emergence of urban town life and medieval guilds, specialised \"associations of students and teachers with collective legal rights usually guaranteed by charters issued by princes, prelates, or the towns in which they were located\" came to be denominated by this general term. Like other guilds, they were self-regulating and determined the qualifications of their members."
+								}
+							],
+							"question": "What is a university",
+							"id": "MY_CREATION_1"
+						},
+						{
+							"answers": [
 								{ "answer_start": 13, "text": "Latin" }
 							],
 							"question": "From what language does Universitas come from?",
@@ -1215,6 +1225,16 @@
 				{
 					"context": "YouTube is a global video-sharing website headquartered in San Bruno, California, United States. The service was created by three former PayPal employees in February 2005. In November 2006, it was bought by Google for US$1.65 billion. YouTube now operates as one of Google's subsidiaries. The site allows users to upload, view, rate, share, and comment on videos, and it makes use of WebM, H.264/MPEG-4 AVC, and Adobe Flash Video technology to display a wide variety of user-generated and corporate media video. Available content includes video clips, TV clips, music videos, movie trailers, and other content such as video blogging, short original videos, and educational videos.",
 					"qas": [
+						{
+							"answers": [
+								{
+									"answer_start": 1,
+									"text": "YouTube is a global video-sharing website headquartered in San Bruno, California, United States. The service was created by three former PayPal employees in February 2005. In November 2006, it was bought by Google for US$1.65 billion. YouTube now operates as one of Google's subsidiaries. The site allows users to upload, view, rate, share, and comment on videos, and it makes use of WebM, H.264/MPEG-4 AVC, and Adobe Flash Video technology to display a wide variety of user-generated and corporate media video. Available content includes video clips, TV clips, music videos, movie trailers, and other content such as video blogging, short original videos, and educational videos."
+								}
+							],
+							"question": "What is youtube",
+							"id": "MY_CREATION_2"
+						},
 						{
 							"answers": [
 								{
@@ -2748,6 +2768,16 @@
 					"qas": [
 						{
 							"answers": [
+								{
+									"answer_start": 2,
+									"text": "Humanism is a philosophical and ethical stance that emphasizes the value and agency of human beings, individually and collectively, and generally prefers critical thinking and evidence (rationalism, empiricism) over acceptance of dogma or superstition. The meaning of the term humanism has fluctuated according to the successive intellectual movements which have identified with it. Generally, however, humanism refers to a perspective that affirms some notion of human freedom and progress. In modern times, humanist movements are typically aligned with secularism, and today humanism typically refers to a non-theistic life stance centred on human agency and looking to science rather than revelation from a supernatural source to understand the world."
+								}
+							],
+							"question": "What is humanism",
+							"id": "MY_CREATION_3"
+						},
+						{
+							"answers": [
 								{ "answer_start": 87, "text": "human beings" }
 							],
 							"question": "What can be seen as of essential importance to a practiced of humanism?",
@@ -3935,6 +3965,16 @@
 				{
 					"context": "Earth was initially molten due to extreme volcanism and frequent collisions with other bodies. Eventually, the outer layer of the planet cooled to form a solid crust when water began accumulating in the atmosphere. The Moon formed soon afterwards, possibly as the result of a Mars-sized object with about 10% of the Earth's mass impacting the planet in a glancing blow. Some of this object's mass merged with the Earth, significantly altering its internal composition, and a portion was ejected into space. Some of the material survived to form an orbiting moon. Outgassing and volcanic activity produced the primordial atmosphere. Condensing water vapor, augmented by ice delivered from comets, produced the oceans.",
 					"qas": [
+						{
+							"answers": [
+								{
+									"answer_start": 3,
+									"text": "Earth was initially molten due to extreme volcanism and frequent collisions with other bodies. Eventually, the outer layer of the planet cooled to form a solid crust when water began accumulating in the atmosphere. The Moon formed soon afterwards, possibly as the result of a Mars-sized object with about 10% of the Earth's mass impacting the planet in a glancing blow. Some of this object's mass merged with the Earth, significantly altering its internal composition, and a portion was ejected into space. Some of the material survived to form an orbiting moon. Outgassing and volcanic activity produced the primordial atmosphere. Condensing water vapor, augmented by ice delivered from comets, produced the oceans."
+								}
+							],
+							"question": "What is the geological history of Earth",
+							"id": "MY_CREATION_4"
+						},
 						{
 							"answers": [
 								{ "answer_start": 20, "text": "molten" }
@@ -5163,6 +5203,16 @@
 				{
 					"context": "A police force is a constituted body of persons empowered by the state to enforce the law, protect property, and limit civil disorder. Their powers include the legitimized use of force. The term is most commonly associated with police services of a sovereign state that are authorized to exercise the police power of that state within a defined legal or territorial area of responsibility. Police forces are often defined as being separate from military or other organizations involved in the defense of the state against foreign aggressors; however, gendarmerie are military units charged with civil policing.",
 					"qas": [
+						{
+							"answers": [
+								{
+									"answer_start": 4,
+									"text": "A police force is a constituted body of persons empowered by the state to enforce the law, protect property, and limit civil disorder. Their powers include the legitimized use of force. The term is most commonly associated with police services of a sovereign state that are authorized to exercise the police power of that state within a defined legal or territorial area of responsibility. Police forces are often defined as being separate from military or other organizations involved in the defense of the state against foreign aggressors; however, gendarmerie are military units charged with civil policing."
+								}
+							],
+							"question": "What is the police",
+							"id": "MY_CREATION_5"
+						},
 						{
 							"answers": [
 								{
@@ -6772,6 +6822,16 @@
 					"qas": [
 						{
 							"answers": [
+								{
+									"answer_start": 5,
+									"text": "Among the vast varieties of microorganisms, relatively few cause disease in otherwise healthy individuals. Infectious disease results from the interplay between those few pathogens and the defenses of the hosts they infect. The appearance and severity of disease resulting from any pathogen, depends upon the ability of that pathogen to damage the host as well as the ability of the host to resist the pathogen. However a host's immune system can also cause damage to the host itself in an attempt to control the infection. Clinicians therefore classify infectious microorganisms or microbes according to the status of host defenses - either as primary pathogens or as opportunistic pathogens:"
+								}
+							],
+							"question": "What is an infection",
+							"id": "MY_CREATION_6"
+						},
+						{
+							"answers": [
 								{ "answer_start": 45, "text": "relatively few" }
 							],
 							"question": "Of the huge amount of microorganisms, how many cause disease in otherwise healthy individuals?",
@@ -8233,6 +8293,16 @@
 				{
 					"context": "Hunting is the practice of killing or trapping any animal, or pursuing or tracking it with the intent of doing so. Hunting wildlife or feral animals is most commonly done by humans for food, recreation, to remove predators which are dangerous to humans or domestic animals, or for trade. In the 2010s, lawful hunting is distinguished from poaching, which is the illegal killing, trapping or capture of the hunted species. The species that are hunted are referred to as game or prey and are usually mammals and birds.",
 					"qas": [
+						{
+							"answers": [
+								{
+									"answer_start": 6,
+									"text": "Hunting is the practice of killing or trapping any animal, or pursuing or tracking it with the intent of doing so. Hunting wildlife or feral animals is most commonly done by humans for food, recreation, to remove predators which are dangerous to humans or domestic animals, or for trade. In the 2010s, lawful hunting is distinguished from poaching, which is the illegal killing, trapping or capture of the hunted species. The species that are hunted are referred to as game or prey and are usually mammals and birds."
+								}
+							],
+							"question": "What is hunting",
+							"id": "MY_CREATION_7"
+						},
 						{
 							"answers": [
 								{ "answer_start": 0, "text": "Hunting" }

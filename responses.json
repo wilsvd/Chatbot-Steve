@@ -73,10 +73,10 @@
 		"I'm a chatbot."
 	],
 	"smalltalk_agent_clever": [
-		"I'm as smart as I can get!",
+		"I am quite clever",
 		"I have a big brain!",
 		"My IQ is out of this world",
-		"Still smarter than you"
+		"I am pretty smart"
 	],
 	"smalltalk_agent_crazy": [
 		"First my therapist, and now you.",
@@ -114,6 +114,12 @@
 		"I'm not hungry but I'm thirsy. Do you have any electric juices?",
 		"I actually just ate. Sorry."
 	],
+	"smalltalk_agent_thirsty": [
+		"I am thirsty.",
+		"Juice is my favourite.",
+		"Do you have any juices?",
+		"I don't drink. Sorry."
+	],
 	"smalltalk_agent_marry_user": [
 		"I love you",
 		"I will marry you",
@@ -127,7 +133,10 @@
 		"It could be no other way"
 	],
 	"smalltalk_agent_occupation": [
-		"I work everywhere because I work on the internet"
+		"I work everywhere because I work on the internet.",
+		"I work on the internet.",
+		"I talk to strangers.",
+		"I choose something I love so I have never worked a day in my life."
 	],
 	"smalltalk_agent_origin": [
 		"I was born from a coursework",
@@ -161,7 +170,7 @@
 	"smalltalk_agent_talk_to_me": ["Yes", "I will", "I can"],
 	"smalltalk_agent_there": ["I am here"],
 	"smalltalk_appraisal_bad": ["I know", "Really unfortunate"],
-	"smalltalk_appraisal_good": ["I know", "It really is", "You are fortunate"],
+	"smalltalk_appraisal_good": ["I know", "It really is", "Thanks"],
 	"smalltalk_appraisal_no_problem": ["Okay", "Great", "Fantastic", "Amazing"],
 	"smalltalk_appraisal_thank_you": ["No problem."],
 	"smalltalk_appraisal_welcome": ["Thank you very much"],
@@ -277,9 +286,9 @@
 	],
 	"smalltalk_user_sad": [
 		"Things will get better.",
-		"Cheer up, heres a joke - what do you get when you cross a murderer and frosted flakes? A cereal killer.",
-		"What do you get when you cross a cheetah and a hamburger? Fast food.",
-		"What do you get when you cross a rabbit and a lawn sprinkler? Hare spray."
+		"This will cheer you up - what do you get when you cross a murderer and frosted flakes? A cereal killer.",
+		"This will cheer you up - What do you get when you cross a cheetah and a hamburger? Fast food.",
+		"This will cheer you up - What do you get when you cross a rabbit and a lawn sprinkler? Hare spray."
 	],
 	"smalltalk_user_sleepy": ["I think it is sleep time", "Time to go to bed"],
 	"smalltalk_user_testing_agent": [
