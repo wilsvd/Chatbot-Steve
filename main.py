@@ -16,8 +16,6 @@ NAME = "NAME"
 SMALLTALK = "SMALL TALK"
 QUESTION = "QUESTION"
 
-name_data = load("./joblibs/name_dataset.joblib")
-
 small_talk = SmallTalk()
 q_a = QuestionAnswer()
 id_manage = IdentityManagement()
@@ -49,8 +47,7 @@ while (query):
             continue
     
     # Extracts only the relevant key words for the question and answer
-    qa_query = preprocess_text(text=q_input, stopwords = True, type="lemmatisation")
-    response = q_a.answer_question(qa_query)
+    response = q_a.answer_question(query)
     if (response != "NOT FOUND"):
         print(f"Steve: Here is the answer to your question --- {response}")
         continue

@@ -758,6 +758,8 @@ have you been ready,smalltalk_agent_ready
 have you been ready?,smalltalk_agent_ready
 were you ready,smalltalk_agent_ready
 were you ready?,smalltalk_agent_ready
+are you human?,smalltalk_agent_real
+are you a person?,smalltalk_agent_real
 are you a real human,smalltalk_agent_real
 are you a real human being?,smalltalk_agent_real
 are you a real human?,smalltalk_agent_real
@@ -2130,7 +2132,7 @@ I am joking,smalltalk_user_joking
 i am kidding,smalltalk_user_joking
 i just joked,smalltalk_user_joking
 i just thought it was a joke,smalltalk_user_joking
-i just'm trying to be funny,smalltalk_user_joking
+i am just trying to be funny,smalltalk_user_joking
 I was just joking,smalltalk_user_joking
 i was just joking,smalltalk_user_joking
 i'm doing it as a joke,smalltalk_user_joking

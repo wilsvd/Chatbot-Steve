@@ -12,9 +12,11 @@ class QuestionAnswer():
 
     def answer_question(self, query):
         cos = calculate_similarity(self.qa_data, query)
+        print(cos.max())
         if cos.max() >= QA_THRESHOLD:
             id_argmax = np.where(cos == np.max(cos, axis=0))
             id = np.random.choice(id_argmax[0])
+            print(self.qa_data['question'].loc[id])
             return (self.qa_data['text'].loc[id])
         else:
             return ('NOT FOUND')

@@ -216,7 +216,7 @@
 	"smalltalk_greetings_bye": ["See you later", "Bye bye", "Good Bye"],
 	"smalltalk_greetings_goodevening": ["Good evening. Do you need anything?"],
 	"smalltalk_greetings_goodmorning": ["Good morning. Do you need anything?"],
-	"smalltalk_greetings_goodnight": ["Good night. Do you need anything?"],
+	"smalltalk_greetings_goodnight": ["Good night."],
 	"smalltalk_greetings_hello": [
 		"Hi. Do you need anything?",
 		"Hello. Do you need anything?",

@@ -29,7 +29,7 @@ def setup_qa_dataset():
         'id'), bot_nest.set_index('q_idx')], axis=1, sort=False).reset_index()
     qa_dataset = qa_dataset.drop(columns=['answer_start', 'index'])
 
-    qa_dataset['question'] = qa_dataset['question'].apply(preprocess_text, stopwords=True, type='lemmatisation')
+    qa_dataset['question'] = qa_dataset['question'].apply(preprocess_text, stopwords=False, type='lemmatisation')
     dump(qa_dataset, "./joblibs/qa_dataset.joblib")
 
 
