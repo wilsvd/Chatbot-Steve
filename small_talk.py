@@ -1,53 +1,31 @@
 import pandas as pd
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import pairwise_distances
-from match_intent import calculate_similarity
 from process_text import create_sentence
 import json
+from joblib import load
 
-SM_THRESHOLD = 0.65
+class SmallTalk():
 
-# def make_small_talk(sm_data, query):
-#     cos = calculate_similarity(sm_data, query)
-#     if cos.max() >= SM_THRESHOLD:
-#         id_argmax = np.where(cos == np.max(cos, axis=0))
-#         id = np.random.choice(id_argmax[0])
-#         result = sm_data['answer'].loc[id]
-#         return result
-#     else:
-#         return 'NOT FOUND'
+    def __init__(self):
+        self.classifier = load("./joblibs/intent_classifier.joblib")
+        self.tf_idf = load("./joblibs/tfidf_vectorizer.joblib")
 
-def get_intent(intent_data, query):
-    # TF-IDF
-    tfidf_vec = TfidfVectorizer(analyzer='word')
-    # Document-term matrix
-    X_tfidf = tfidf_vec.fit_transform(intent_data['Utterances']).toarray()
-    input_tfidf = tfidf_vec.transform([query]).toarray()
-    # Dataframe
-    df_tfidf = pd.DataFrame(X_tfidf, columns=tfidf_vec.get_feature_names_out())
-    # Cosine similarity
-    cos = 1 - pairwise_distances(df_tfidf, input_tfidf, metric='cosine')
+    def __get_intent(self, query):
+        input_tfidf = self.tf_idf.transform([query])
+        result = self.classifier.predict(input_tfidf)
+        return result[0]
 
-    if cos.max() >= SM_THRESHOLD:
-        id_argmax = np.where(cos == np.max(cos, axis=0))
-        id = np.random.choice(id_argmax[0])
-        intent = intent_data['Intent'].loc[id]
-        return intent
-    else:
-        return 'NOT FOUND'
+    def find_response(self, query):
+        result = self.__get_intent(query)
 
-def find_response(intent_data, query):
-    result = get_intent(intent_data, query)
-
-    if result == 'NOT FOUND':
-        return 'NOT FOUND'
-    
-    with open('./responses.json') as f:
-        response_data = json.load(f)
-        options = response_data[result]
-        id = np.random.choice(len(options))
-        return options[id]
+        if result == 'NOT FOUND':
+            return 'NOT FOUND'
+        
+        with open('./responses.json') as f:
+            response_data = json.load(f)
+            options = response_data[result]
+            id = np.random.choice(len(options))
+            return options[id]
 
 
 # After getting intent, I know that it exsits (That is why I was able to get it dumb dumb)
