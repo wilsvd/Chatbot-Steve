@@ -17,7 +17,7 @@ class SmallTalk():
 
     def find_response(self, query):
         result = self.__get_intent(query)
-
+        # print(result)
         if result == 'NOT FOUND':
             return 'NOT FOUND'
         

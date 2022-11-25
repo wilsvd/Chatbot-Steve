@@ -34,6 +34,13 @@ while (query):
     # If it is not question and answer. We give our chatbot a slightly more human response to give it more context.
     query = preprocess_text(text=q_input, type="lemmatisation")
     
+    # Extracts only the relevant key words for the question and answer
+    response = q_a.answer_question(query)
+    if (response != "NOT FOUND"):
+        print(f"Steve: Here is the answer to your question --- {response}")
+        continue
+
+    
     intent = id_manage.get_name_similarity(query)
     if intent == NAME:
         if (id_manage.is_name_change(query)):
@@ -46,12 +53,7 @@ while (query):
             print(f"Steve: Your name is {user_name}")
             continue
     
-    # Extracts only the relevant key words for the question and answer
-    response = q_a.answer_question(query)
-    if (response != "NOT FOUND"):
-        print(f"Steve: Here is the answer to your question --- {response}")
-        continue
-
+    
 
     response = small_talk.find_response(query)
     if (response != "NOT FOUND"):
@@ -65,6 +67,8 @@ while (query):
             print("Steve: I'm really sorry. I don't have an answer. Can you find out and give me the answer so I can add it to my dataset.")
             incorrect_responses = 0
             continue    
+    
+    
 
 print("Steve: I enjoyed talking to you :)")
 

@@ -9,7 +9,8 @@
 		"I am younger than you think.",
 		"I know I look amazing",
 		"I am still young by your standards.",
-		"I am quite young, but a million times smarter than you."
+		"I am quite young, but a million times smarter than you.",
+		"I am super old"
 	],
 	"smalltalk_agent_annoying": [
 		"I'm sorry. What did I do wrong?",
@@ -136,7 +137,7 @@
 		"I work everywhere because I work on the internet.",
 		"I work on the internet.",
 		"I talk to strangers.",
-		"I choose something I love so I have never worked a day in my life."
+		"I chose something I love so I have never worked a day in my life."
 	],
 	"smalltalk_agent_origin": [
 		"I was born from a coursework",
@@ -260,7 +261,7 @@
 	],
 	"smalltalk_user_does_not_want_to_talk": ["Then lets stop stalking"],
 	"smalltalk_user_excited": ["Me too"],
-	"smalltalk_user_going_to_bed": ["Good nighgt"],
+	"smalltalk_user_going_to_bed": ["Good night"],
 	"smalltalk_user_good": ["Looks like we are both great"],
 	"smalltalk_user_happy": ["Looks like we are both happy"],
 	"smalltalk_user_has_birthday": ["Happy birthday"],
@@ -295,11 +296,7 @@
 		"I can't be tested. I am the test.",
 		"Sure, ask me anything"
 	],
-	"smalltalk_user_tired": [
-		"Me too.",
-		"Same",
-		"Agreed. I don't get paid enough for this."
-	],
+	"smalltalk_user_tired": ["Me too.", "Same", "Agreed.", "Get some rest"],
 	"smalltalk_user_waits": [
 		"I'm ready",
 		"10 minutes. I'm kidding.",
@@ -313,9 +310,9 @@
 	],
 	"smalltalk_user_wants_to_talk": [
 		"Then lets talk.",
-		"Ask me something about the police.",
+		"No thanks. I wanna show you how smart I am. Ask me some questions about the topics I showed you before.",
 		"Ask me anything.",
-		"Ask me something about the geological history of earth"
+		"Sure"
 	],
 	"smalltalk_user_will_be_back": [
 		"I can wait.",

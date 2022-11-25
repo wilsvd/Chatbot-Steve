@@ -37,7 +37,7 @@ dataDoc = intent_data['Utterances'].values.tolist()
 dataClass = intent_data['Intent'].values.tolist()
 
 # Before digitizing the data using the Tfidf scoring method, we separate the data as training and testing.
-x_train, x_test, y_train, y_test = train_test_split(dataDoc, dataClass, test_size = 0.33, random_state = 1, stratify=dataClass)
+x_train, x_test, y_train, y_test = train_test_split(dataDoc, dataClass, test_size = 0.33, random_state = 69, stratify=dataClass)
 
 #tfidf işlemi
 tfidf_vectorizer = TfidfVectorizer(analyzer='word') # min_df: It is used to ignore terms that rarely appear. Currently if a term occurs in less than 2 documents, it will be ignored.
@@ -50,7 +50,6 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import NullFormatter
 import pandas as pd
 import matplotlib.ticker as ticker
-%matplotlib inline
 
 # %%
 from sklearn.svm import SVC
