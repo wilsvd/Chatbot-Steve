@@ -15,6 +15,7 @@ if __name__ == "__main__":
     user_name = id_manage.set_username(user_input)
     print(f"Steve: Let me know at any time if you want to change your username {user_name} :)")
     print("Steve: You can either chat with me or ask questions about:\n -- University, Youtube, Humanism, Geological History of Earth, Police, Infection, Hunting --\n")
+    print("Steve: If you want to end the conversation at any time just say Bye \n")
 
     query = "TEMP STRING"
     while (query):
@@ -40,5 +41,8 @@ if __name__ == "__main__":
         
         response = small_talk.find_response(query)
         print(f"Steve: {response}")
+
+        if query.lower() == "bye":
+            break
 
     print("Steve: I enjoyed talking to you :)")

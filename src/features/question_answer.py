@@ -17,7 +17,6 @@ class QuestionAnswer():
         if cos.max() >= QA_THRESHOLD:
             id_argmax = np.where(cos == np.max(cos, axis=0))
             id = np.random.choice(id_argmax[0])
-            print(self.qa_data['question'].loc[id])
             return (self.qa_data['text'].loc[id])
         else:
             return ('NOT FOUND')
