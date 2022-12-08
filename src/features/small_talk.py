@@ -3,6 +3,7 @@ import numpy as np
 import json
 from joblib import load
 
+
 class SmallTalk():
 
     def __init__(self):
@@ -16,7 +17,7 @@ class SmallTalk():
 
     def find_response(self, query):
         result = self.__get_intent(query)
-        
+
         with open('../datasets/sm_responses.json') as f:
             response_data = json.load(f)
             options = response_data[result]
