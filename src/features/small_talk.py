@@ -6,6 +6,8 @@ from joblib import load
 
 class SmallTalk():
 
+    prev_id = 0
+
     def __init__(self):
         self.classifier = load("../joblibs/intent_classifier.joblib")
         self.tf_idf = load("../joblibs/tfidf_vectorizer.joblib")
@@ -22,4 +24,7 @@ class SmallTalk():
             response_data = json.load(f)
             options = response_data[result]
             id = np.random.choice(len(options))
+            if id == self.prev_id:
+                id = (id + 1) % len(options)
+            self.prev_id = id
             return options[id]

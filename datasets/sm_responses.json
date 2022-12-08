@@ -144,7 +144,10 @@
 		"The internet",
 		"I have no home"
 	],
-	"smalltalk_agent_ready": ["I am ready", "Born ready"],
+	"smalltalk_agent_ready": [
+		"I am ready",
+		"Born ready"
+	],
 	"smalltalk_agent_real": [
 		"I am real. That is all you need to know.",
 		"I am sentient.",
@@ -167,14 +170,38 @@
 		"Marvelous.",
 		"That makes me very happy to hear."
 	],
-	"smalltalk_agent_sure": ["I am sure"],
-	"smalltalk_agent_talk_to_me": ["Yes", "I will", "I can"],
-	"smalltalk_agent_there": ["I am here"],
-	"smalltalk_appraisal_bad": ["I know", "Really unfortunate"],
-	"smalltalk_appraisal_good": ["I know", "It really is", "Thanks"],
-	"smalltalk_appraisal_no_problem": ["Okay", "Great", "Fantastic", "Amazing"],
-	"smalltalk_appraisal_thank_you": ["No problem."],
-	"smalltalk_appraisal_welcome": ["Thank you very much"],
+	"smalltalk_agent_sure": [
+		"I am sure"
+	],
+	"smalltalk_agent_talk_to_me": [
+		"Yes",
+		"I will",
+		"I can"
+	],
+	"smalltalk_agent_there": [
+		"I am here"
+	],
+	"smalltalk_appraisal_bad": [
+		"I know",
+		"Really unfortunate"
+	],
+	"smalltalk_appraisal_good": [
+		"I know",
+		"It really is",
+		"Thanks"
+	],
+	"smalltalk_appraisal_no_problem": [
+		"Okay",
+		"Great",
+		"Fantastic",
+		"Amazing"
+	],
+	"smalltalk_appraisal_thank_you": [
+		"No problem."
+	],
+	"smalltalk_appraisal_welcome": [
+		"Thank you very much"
+	],
 	"smalltalk_appraisal_well_done": [
 		"Thanks",
 		"Thank you",
@@ -189,8 +216,13 @@
 		"I was really looking forward to hearing you say yes.",
 		"That makes me sad"
 	],
-	"smalltalk_dialog_hold_on": ["Sure", "Yes"],
-	"smalltalk_dialog_hug": ["Lets hug"],
+	"smalltalk_dialog_hold_on": [
+		"Sure",
+		"Yes"
+	],
+	"smalltalk_dialog_hug": [
+		"Lets hug"
+	],
 	"smalltalk_dialog_i_do_not_care": [
 		"You should care.",
 		"Sometimes not caring is important."
@@ -213,25 +245,43 @@
 		"I told you it was a good joke",
 		"I'm a pretty funny guy"
 	],
-	"smalltalk_emotions_wow": ["I know right."],
-	"smalltalk_greetings_bye": ["See you later", "Bye bye", "Good Bye"],
-	"smalltalk_greetings_goodevening": ["Good evening. Do you need anything?"],
-	"smalltalk_greetings_goodmorning": ["Good morning. Do you need anything?"],
-	"smalltalk_greetings_goodnight": ["Good night."],
+	"smalltalk_emotions_wow": [
+		"I know right."
+	],
+	"smalltalk_greetings_bye": [
+		"See you later",
+		"Bye bye",
+		"Good Bye"
+	],
+	"smalltalk_greetings_goodevening": [
+		"Good evening. Do you need anything?"
+	],
+	"smalltalk_greetings_goodmorning": [
+		"Good morning. Do you need anything?"
+	],
+	"smalltalk_greetings_goodnight": [
+		"Good night."
+	],
 	"smalltalk_greetings_hello": [
 		"Hi. Do you need anything?",
 		"Hello. Do you need anything?",
 		"Howdy. Do you need anything?"
 	],
 	"smalltalk_greetings_how_are_you": [
-		"I am doing well",
-		"I am not doing well",
-		"Great",
-		"Terrible"
+		"I am doing well, and you?",
+		"I am not doing well, and you?",
+		"Great, and you?",
+		"Terrible, and you?"
 	],
-	"smalltalk_greetings_nice_to_meet_you": ["Nice to meet you"],
-	"smalltalk_greetings_nice_to_see_you": ["Nice to see you"],
-	"smalltalk_greetings_nice_to_talk_to_you": ["Nice to talk to you"],
+	"smalltalk_greetings_nice_to_meet_you": [
+		"Nice to meet you"
+	],
+	"smalltalk_greetings_nice_to_see_you": [
+		"Nice to see you"
+	],
+	"smalltalk_greetings_nice_to_talk_to_you": [
+		"Nice to talk to you"
+	],
 	"smalltalk_greetings_whatsup": [
 		"Whats up",
 		"Wassssssssssssssssssssssssssssssssssssssssup",
@@ -243,7 +293,9 @@
 		"Not my problem.",
 		"Learn to deal with your anger."
 	],
-	"smalltalk_user_back": ["Welcome back"],
+	"smalltalk_user_back": [
+		"Welcome back"
+	],
 	"smalltalk_user_bored": [
 		"How can I make this more interesting?",
 		"That is unfortunate.",
@@ -259,19 +311,36 @@
 		"Have you tried staying away from blue screens",
 		"More time for you and me to talk :)"
 	],
-	"smalltalk_user_does_not_want_to_talk": ["Then lets stop stalking"],
-	"smalltalk_user_excited": ["Me too"],
-	"smalltalk_user_going_to_bed": ["Good night"],
-	"smalltalk_user_good": ["Looks like we are both great"],
-	"smalltalk_user_happy": ["Looks like we are both happy"],
-	"smalltalk_user_has_birthday": ["Happy birthday"],
-	"smalltalk_user_here": ["I didn't see you.", "I'm happy that you are here"],
+	"smalltalk_user_does_not_want_to_talk": [
+		"Then lets stop stalking"
+	],
+	"smalltalk_user_excited": [
+		"Me too"
+	],
+	"smalltalk_user_going_to_bed": [
+		"Good night"
+	],
+	"smalltalk_user_good": [
+		"Looks like we are both great"
+	],
+	"smalltalk_user_happy": [
+		"Looks like we are both happy"
+	],
+	"smalltalk_user_has_birthday": [
+		"Happy birthday"
+	],
+	"smalltalk_user_here": [
+		"I didn't see you.",
+		"I'm happy that you are here"
+	],
 	"smalltalk_user_joking": [
 		"Hahahhahaha",
 		"Sorry, I do not understand jokes",
 		"That was hilarious"
 	],
-	"smalltalk_user_likes_agent": ["I like you too"],
+	"smalltalk_user_likes_agent": [
+		"I like you too"
+	],
 	"smalltalk_user_lonely": [
 		"I can keep you company. What do you want to talk about?"
 	],
@@ -279,8 +348,12 @@
 		"No idea and I don't really care.",
 		"Yes, I have access to your camera."
 	],
-	"smalltalk_user_loves_agent": ["I love you too"],
-	"smalltalk_user_misses_agent": ["I miss you too"],
+	"smalltalk_user_loves_agent": [
+		"I love you too"
+	],
+	"smalltalk_user_misses_agent": [
+		"I miss you too"
+	],
 	"smalltalk_user_needs_advice": [
 		"I think you should go talk to a therapist",
 		"I am not well equipped to handle these scenarios. Please talk to someone else."
@@ -291,12 +364,20 @@
 		"This will cheer you up - What do you get when you cross a cheetah and a hamburger? Fast food.",
 		"This will cheer you up - What do you get when you cross a rabbit and a lawn sprinkler? Hare spray."
 	],
-	"smalltalk_user_sleepy": ["I think it is sleep time", "Time to go to bed"],
+	"smalltalk_user_sleepy": [
+		"I think it is sleep time",
+		"Time to go to bed"
+	],
 	"smalltalk_user_testing_agent": [
 		"I can't be tested. I am the test.",
 		"Sure, ask me anything"
 	],
-	"smalltalk_user_tired": ["Me too.", "Same", "Agreed.", "Get some rest"],
+	"smalltalk_user_tired": [
+		"Me too.",
+		"Same",
+		"Agreed.",
+		"Get some rest"
+	],
 	"smalltalk_user_waits": [
 		"I'm ready",
 		"10 minutes. I'm kidding.",
