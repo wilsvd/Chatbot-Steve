@@ -4,6 +4,7 @@ from joblib import load
 
 QA_THRESHOLD = 0.7
 
+
 class QuestionAnswer():
 
     def __init__(self) -> None:
@@ -23,7 +24,6 @@ class QuestionAnswer():
 
     def get_top_5_similar(self, query):
         cos = calculate_similarity(self.qa_data, query)
-        ind = np.argsort(cos[:, 0])[::-1]   
+        ind = np.argsort(cos[:, 0])[::-1]
         res = self.qa_data['text'].loc[ind[0:5]]
         return res
-        

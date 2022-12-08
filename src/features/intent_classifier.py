@@ -6,14 +6,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from utility.process_text import ProcessText
 
+
 class TrainClassifier():
 
     def __init__(self) -> None:
         self.intent_data = load("../joblibs/intent_dataset.joblib")
-        self.tokenizer = RegexpTokenizer(r'\w+')
-        self.punct_re = lambda x: " ".join(self.tokenizer.tokenize(x.lower()))
-        self.lemmatizer = nltk.stem.WordNetLemmatizer()
-        self.w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
         self.process_text = ProcessText()
 
     def dataset_characteristics(self):

@@ -17,7 +17,7 @@ NAME_WORDS = ["like", "called", "call", "me", "change", "changed", "my", "name",
 
 
 QUESTION_WORDS = ["what", "which", "who", "where", "why", "when", "how", "am", "is", "are", "was", "were",
-                    "being", "been", "be", "have", "has", "had", "do", "does", "did", "will", "would", "shall", "should"]
+                  "being", "been", "be", "have", "has", "had", "do", "does", "did", "will", "would", "shall", "should"]
 
 # nltk.download('stopwords')
 # nltk.download('averaged_perceptron_tagger')
@@ -35,11 +35,10 @@ class ProcessText():
             new_tokens.append(SB_STEMMER.stem(token))
         return new_tokens
 
-
     def token_lemmatisation(self, tokens):
         new_tokens = []
 
-        posmap = {
+        word_class_map = {
             'NOUN': 'n',
             'VERB': 'v',
             'ADJ': 'a',
@@ -49,12 +48,12 @@ class ProcessText():
         post = nltk.pos_tag(tokens, tagset='universal')
         for token in post:
             word, tag = token[0], token[1]
-            if tag in posmap.keys():
-                new_tokens.append(LEMMATISER.lemmatize(word, posmap[tag]))
+            if tag in word_class_map.keys():
+                new_tokens.append(LEMMATISER.lemmatize(
+                    word, word_class_map[tag]))
             else:
                 new_tokens.append(LEMMATISER.lemmatize(word))
         return new_tokens
-
 
     def tokenise_text(self, text, type):
         # tokenise
@@ -88,8 +87,7 @@ class ProcessText():
 
         return tokens
 
-
-    def preprocess_text(self, text = "", stopwords = False, type = "lemmatisation"):
+    def preprocess_text(self, text="", stopwords=False, type="lemmatisation"):
         text = str(text).lower()
         res_tokens = []
         if stopwords:
