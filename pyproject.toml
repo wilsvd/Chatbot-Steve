@@ -16,6 +16,9 @@ ipykernel = "^6.17.1"
 matplotlib = "^3.6.2"
 
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
