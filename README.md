@@ -1,6 +1,23 @@
 # Chatbot
 
-# University Machine
+## Setup
+
+### Poetry
+
+1. Install `poetry`
+2. Type `poetry install`
+3. UNIX/Linux: `source .venv/bin/activate`
+4. Windows: `source .venv/Scripts/activate`
+
+### NLTK Downloads
+
+    import nltk
+    nltk.download("stopwords")
+    nltk.download('wordnet')
+    nltk.download('universal_tagset')
+    nltk.download('averaged_perceptron_tagger')
+    nltk.download('punkt')
+    nltk.download('omw-1.4')
 
 ## How to Run Program
 
@@ -23,18 +40,18 @@ If an error occurs it may be due to the version of Joblib. See the following ins
 
 ### 1. Intent Classifer
 
-- Inspired by [kumbaraci](https://www.kaggle.com/code/kumbaraci/intent-classification) on Kaggle.
+-   Inspired by [kumbaraci](https://www.kaggle.com/code/kumbaraci/intent-classification) on Kaggle.
 
 ### 2. Vectorisation
 
-- [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+-   [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
 
 ### 3. Cosine Similarity
 
-- [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html)
+-   [Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html)
 
 ### 4. Text Pre-processing
 
-- Stemmer - [NLTK](https://www.nltk.org/api/nltk.stem.snowball.html)
-- Lemmatizer - [NLTK](https://www.nltk.org/_modules/nltk/stem/wordnet.html)
-- Tokenizer - [NLTK](https://www.nltk.org/api/nltk.tokenize.html)
+-   Stemmer - [NLTK](https://www.nltk.org/api/nltk.stem.snowball.html)
+-   Lemmatizer - [NLTK](https://www.nltk.org/_modules/nltk/stem/wordnet.html)
+-   Tokenizer - [NLTK](https://www.nltk.org/api/nltk.tokenize.html)
